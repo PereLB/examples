@@ -60,7 +60,7 @@ public class CreateNewMinigame : EditorWindow
                 break;
             case CreationState.CreatingAssets:
                 GUILayout.Label("Creating scene and assets, please wait");
-                GUILayout.Label("and DON'T CLOSE the window ¬¬");
+                GUILayout.Label("and DON'T CLOSE the window Â¬Â¬");
                 break;
             case CreationState.NeedsAttaching:
                 GUILayout.Label("Press the button to attach scripts and link them together");
@@ -211,7 +211,7 @@ namespace Games.MiniGame.{1}
 
         GameObject gameManager = GameObject.Find("Game Manager");
         gameManager.AddComponent(_asset.GetClass());
-        gameManager.GetComponent<TinyRebelGames.Petacore.GameFlow.GameManager>().levelData = sceneSO;
+        gameManager.GetComponent<Games.GameFlow.GameManager>().levelData = sceneSO;
 
         GameObject Container = GameObject.Find("CatContainer");
         Container.GetComponent<CatBuilder>().m_petReference = GameObject.Find($"pf_Cat_{minigameName}_Variant");
