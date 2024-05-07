@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-[CreateAssetMenu(menuName = "TRG/UI/Events/Bool Event Channel")]
+[CreateAssetMenu(menuName = "UI/Events/Bool Event Channel")]
 public class BoolEventChannelSO : ScriptableObject
 {
     public UnityAction<bool> OnEventRaised;
