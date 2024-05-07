@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-[CreateAssetMenu(menuName = "TRG/UI/Events/String Event Channel")]
+[CreateAssetMenu(menuName = "UI/Events/String Event Channel")]
 public class StringEventChannelSO : ScriptableObject
 {
     public UnityAction<string> OnEventRaised;
